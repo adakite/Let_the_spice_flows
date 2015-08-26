@@ -24,10 +24,10 @@ system ( "clear" );
 #define  ROOM     10
 #define  LENOUT   32
     
-SpiceBoolean   found;
+SpiceBoolean found;
 SpiceBoolean eof;
     
-SpiceChar    line[LENOUT];
+SpiceChar line[LENOUT];
 SpiceChar iframe[WORDSZ];
 SpiceChar instnm[WORDSZ];
 SpiceChar satnm [WORDSZ];
@@ -79,7 +79,6 @@ SpiceInt       n;
          rdtext_c ( "settings", WORDSZ, instnm, &eof );
          rdtext_c ( "settings", WORDSZ, time, &eof );
 
-  
 str2et_c ( time, &et );
 
 bodvrd_c ( satnm, "RADII", 3, &i, radii );
